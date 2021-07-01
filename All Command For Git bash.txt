@@ -1,0 +1,86 @@
+For Creating New Project Name & Email For Git Bash--With Terminal
+
+1 to 14
+
+1. git config --global user.name "Your Name"
+2. git config --global user.email "Your Email"
+3. See Which Name And Email Are Being Used Now
+   git config --list
+
+4. To Change Name & Email For New Project
+   git config user.name "New Name"
+   git config user.email "New Email"
+
+5. To Check Untracked File
+   git status
+
+6. To Staging a File
+   git add first Product.txt (first Product.txt is my file name)
+
+7. To Staging All file at a time
+   git add . (or All)
+
+8. For Commit File
+   git commit -m "ChangeName"
+9. To Check log whole file
+   git log --oneline
+
+10. To Come Back From Last Commit
+   git checkout (Your old commit Serial no:)-( for Serial no type git log --oneline)
+
+11. To come back to the start
+   git checkout master
+
+12. To check latest change
+   git diff
+
+13. To check what is change
+  git show (serial no)
+
+14. To remove file
+   git rm (your file name) rm=remove
+   git reset HEAD (your file name)
+
+
+Commad line for github
+
+
+1. To clone github Project
+  git clone (project link) (New name if you want)
+
+2. To Branch Project
+  git checkout -b (branch name)
+
+3. To stash(temporary hide)
+  git stash
+
+4. Restore stash
+  git stash apply(or pop)
+
+5. show stash file
+  git stash list
+
+
+Creat SSH Key
+
+1. ssh-keygen
+   then enter 2 times
+   eval "$(ssh-agent -s)"
+   ssh-add ~/.ssh/id_rsa
+   then go to your github acc > setting > ssh key > New ssh-key > past your ssh key
+   collect ssh key from your c: drive ssh directory
+
+2. To check ssh-key is added or not
+   ssh -T git@github.com
+   then type yes
+
+3. For push it
+  go to github > creat new repository > select HTTPS to SSH > copy git remote link
+  & past it gitbash
+  then type
+  git push -u origin main
+
+
+
+
+
